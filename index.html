@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NORI — National Opioid Response Initiative</title>
+    <meta name="description" content="The National Opioid Response Initiative (NORI) is a comprehensive, community-centered public health initiative addressing the opioid epidemic through overdose prevention, healthcare innovation, recovery support, and scalable community partnerships.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'navy':        '#0D2240',
+                        'navy-dark':   '#091729',
+                        'navy-light':  '#1A3A6B',
+                        'fed-blue':    '#1A5E9E',
+                        'gold':        '#C8972A',
+                        'gold-light':  '#E0AE4A',
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .gold-rule  { border-top: 2px solid #C8972A; }
+        .navy-rule  { border-top: 1px solid #0D2240; }
+        select option { background-color: #0D2240; }
+    </style>
+</head>
+<body class="bg-white text-gray-800 font-sans antialiased">
+
+    <!-- ─── NAV ─── -->
+    <nav class="sticky top-0 z-50 bg-white border-b border-gray-200">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+
+            <!-- Wordmark -->
+            <a href="#" class="flex items-center gap-3 no-underline">
+                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <circle cx="18" cy="18" r="16.5" stroke="#0D2240" stroke-width="1.5"/>
+                    <circle cx="18" cy="18" r="12.5" stroke="#C8972A" stroke-width="0.75"/>
+                    <text x="18" y="22" font-family="Inter,sans-serif" font-size="10" font-weight="800" fill="#0D2240" text-anchor="middle" letter-spacing="1.5">NORI</text>
+                </svg>
+                <div>
+                    <div class="font-extrabold text-navy text-base leading-none tracking-[0.18em]">NORI</div>
+                    <div class="text-[10px] text-gray-400 tracking-wider mt-0.5">National Opioid Response Initiative</div>
+                </div>
+            </a>
+
+            <!-- Nav CTA -->
+            <a href="/assets/docs/NORI_Capability_Statement.pdf" download
+               class="hidden md:inline-flex items-center gap-2 border border-navy text-navy text-xs font-semibold px-4 py-2 tracking-wider uppercase hover:bg-navy hover:text-white transition-colors duration-200">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                </svg>
+                Capability Statement
+            </a>
+        </div>
+    </nav>
+
+    <!-- ─── HERO ─── -->
+    <section class="py-16 px-6 border-b border-gray-100">
+        <div class="max-w-6xl mx-auto">
+            <p class="text-xs font-semibold tracking-[0.25em] uppercase text-fed-blue mb-8">A Public Health Initiative · New Mexico &amp; Beyond</p>
+            <h1 class="text-[7rem] md:text-[11rem] font-extrabold text-navy tracking-tight leading-none mb-5">NORI</h1>
+            <div class="gold-rule w-20 mb-7"></div>
+            <p class="text-4xl md:text-5xl font-light text-gray-600 mb-4 leading-tight">National Opioid Response Initiative</p>
+            <p class="text-base text-gray-400 mb-14 tracking-wide">A Collaborative Initiative Powered by Dream BIG Inc. &amp; MediConnect</p>
+            <div class="flex flex-wrap gap-4">
+                <a href="/assets/docs/NORI_Capability_Statement.pdf" download
+                   class="inline-flex items-center gap-2 bg-navy text-white text-xs font-semibold px-7 py-3.5 tracking-widest uppercase hover:bg-navy-dark transition-colors duration-200">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                    </svg>
+                    Download Capability Statement
+                </a>
+                <a href="#get-involved"
+                   class="inline-flex items-center gap-2 border border-gray-300 text-gray-600 text-xs font-semibold px-7 py-3.5 tracking-widest uppercase hover:border-navy hover:text-navy transition-colors duration-200">
+                    Get Involved
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── ABOUT ─── -->
+    <section class="py-14 px-6 border-b border-gray-100">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16">
+
+            <!-- What is NORI -->
+            <div>
+                <p class="text-xs font-semibold tracking-[0.25em] uppercase text-fed-blue mb-3">About</p>
+                <h2 class="text-3xl font-bold text-navy mb-4 leading-tight">What is NORI?</h2>
+                <div class="gold-rule w-12 mb-6"></div>
+                <p class="text-gray-500 leading-relaxed mb-4">
+                    The National Opioid Response Initiative (NORI) is a comprehensive, community-centered public health initiative developed through a strategic partnership between Dream BIG Inc. and MediConnect to address the opioid epidemic through overdose prevention, healthcare innovation, harm reduction, recovery support, education, and scalable community partnerships.
+                </p>
+                <p class="text-gray-500 leading-relaxed">
+                    NORI was created to serve as a sustainable implementation model for opioid settlement funding by combining grassroots community engagement with healthcare technology, evidence-based practices, and coordinated support systems designed to save lives and strengthen communities.
+                </p>
+            </div>
+
+            <!-- The Problem -->
+            <div>
+                <p class="text-xs font-semibold tracking-[0.25em] uppercase text-fed-blue mb-3">The Challenge</p>
+                <h2 class="text-3xl font-bold text-navy mb-4 leading-tight">The Problem We Address</h2>
+                <div class="gold-rule w-12 mb-6"></div>
+                <ul class="space-y-3 text-gray-500 text-sm">
+                    <li class="flex items-start gap-3">
+                        <span class="text-gold font-bold mt-0.5">—</span>
+                        <span>Increasing overdose deaths and fentanyl-related fatalities</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-gold font-bold mt-0.5">—</span>
+                        <span>Limited access to treatment and persistent healthcare disparities</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-gold font-bold mt-0.5">—</span>
+                        <span>Fragmented support systems and insufficient mental health resources</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-gold font-bold mt-0.5">—</span>
+                        <span>Insufficient overdose preparedness infrastructure</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-gold font-bold mt-0.5">—</span>
+                        <span>Opioid settlement funds distributed without implementation capacity</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-gold font-bold mt-0.5">—</span>
+                        <span>Lack of healthcare coordination systems and scalable outreach networks</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ─── INITIATIVE AREAS ─── -->
+    <section class="py-14 px-6 bg-gray-50 border-b border-gray-100">
+        <div class="max-w-6xl mx-auto">
+            <div class="mb-8">
+                <p class="text-xs font-semibold tracking-[0.25em] uppercase text-fed-blue mb-3">Programs</p>
+                <h2 class="text-3xl font-bold text-navy">Core Initiative Areas</h2>
+                <div class="gold-rule w-12 mt-4"></div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-5">
+
+                <div class="bg-white p-7 border-t-2 border-navy">
+                    <svg class="w-7 h-7 text-navy mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                    </svg>
+                    <h3 class="font-bold text-navy text-sm mb-2">Overdose Prevention &amp; Harm Reduction</h3>
+                    <p class="text-xs text-gray-400 leading-relaxed">Naloxone distribution, overdose prevention kits, fentanyl awareness education, emergency response training, and mobile outreach initiatives.</p>
+                </div>
+
+                <div class="bg-white p-7 border-t-2 border-navy">
+                    <svg class="w-7 h-7 text-navy mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/>
+                    </svg>
+                    <h3 class="font-bold text-navy text-sm mb-2">Recovery Support &amp; Navigation</h3>
+                    <p class="text-xs text-gray-400 leading-relaxed">Treatment referrals, recovery navigation, peer support coordination, family support resources, and long-term recovery engagement.</p>
+                </div>
+
+                <div class="bg-white p-7 border-t-2 border-navy">
+                    <svg class="w-7 h-7 text-navy mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                    </svg>
+                    <h3 class="font-bold text-navy text-sm mb-2">Healthcare Technology &amp; Remote Monitoring</h3>
+                    <p class="text-xs text-gray-400 leading-relaxed">FDA-cleared Sparrow Ascent withdrawal treatment, Tenovi remote patient monitoring ecosystem, and real-time healthcare coordination infrastructure.</p>
+                </div>
+
+                <div class="bg-white p-7 border-t-2 border-navy">
+                    <svg class="w-7 h-7 text-navy mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                    </svg>
+                    <h3 class="font-bold text-navy text-sm mb-2">Education &amp; Public Awareness</h3>
+                    <p class="text-xs text-gray-400 leading-relaxed">School partnerships, youth prevention programs, Spanish-language outreach, social media campaigns, community forums, and public service announcements.</p>
+                </div>
+
+                <div class="bg-white p-7 border-t-2 border-navy">
+                    <svg class="w-7 h-7 text-navy mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-2 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                    </svg>
+                    <h3 class="font-bold text-navy text-sm mb-2">Community Partnership Infrastructure</h3>
+                    <p class="text-xs text-gray-400 leading-relaxed">Collaboration with municipalities, tribal communities, healthcare systems, nonprofits, schools, universities, and behavioral health organizations.</p>
+                </div>
+
+                <div class="bg-white p-7 border-t-2 border-navy">
+                    <svg class="w-7 h-7 text-navy mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064"/>
+                    </svg>
+                    <h3 class="font-bold text-navy text-sm mb-2">Rural &amp; Underserved Community Focus</h3>
+                    <p class="text-xs text-gray-400 leading-relaxed">Expanding prevention, treatment, and recovery support access to rural communities, underserved populations, and tribal communities.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── PARTNERS ─── -->
+    <section class="py-14 px-6 border-b border-gray-100">
+        <div class="max-w-6xl mx-auto">
+            <div class="mb-8">
+                <p class="text-xs font-semibold tracking-[0.25em] uppercase text-fed-blue mb-3">Organizational Foundation</p>
+                <h2 class="text-3xl font-bold text-navy">Powered By</h2>
+                <div class="gold-rule w-12 mt-4"></div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-6">
+
+                <div class="p-8 border border-gray-200">
+                    <div class="text-xl font-bold text-navy mb-1">Dream BIG Inc.</div>
+                    <div class="text-[10px] font-semibold tracking-[0.2em] uppercase text-gold mb-5">501(c)(3) Nonprofit · Est. 2011</div>
+                    <p class="text-sm text-gray-400 leading-relaxed">Community engagement infrastructure, nonprofit administration and oversight, outreach and activation capabilities, and established community trust across New Mexico.</p>
+                </div>
+
+                <div class="p-8 border border-gray-200">
+                    <div class="text-xl font-bold text-navy mb-1">MediConnect</div>
+                    <div class="text-[10px] font-semibold tracking-[0.2em] uppercase text-gold mb-5">Healthcare Technology Partner</div>
+                    <p class="text-sm text-gray-400 leading-relaxed">Clinical coordination, remote patient monitoring systems, healthcare technology integration, recovery support infrastructure, and care management systems.</p>
+                </div>
+
+                <div class="p-8 border border-gray-200">
+                    <div class="text-xl font-bold text-navy mb-1">Johns Hopkins</div>
+                    <div class="text-[10px] font-semibold tracking-[0.2em] uppercase text-gold mb-5">Research &amp; Academic Support</div>
+                    <p class="text-sm text-gray-400 leading-relaxed">Evidence-based research support from the Johns Hopkins School of Nursing, including faculty Dr. Nancy S. Goldstein and Dr. Janiece L. Taylor.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ─── GET INVOLVED ─── -->
+    <section id="get-involved" class="py-14 px-6 bg-navy">
+        <div class="max-w-xl mx-auto text-center">
+            <p class="text-xs font-semibold tracking-[0.25em] uppercase text-gold mb-3">Stay Connected</p>
+            <h2 class="text-3xl font-bold text-white mb-3">Get Involved</h2>
+            <div class="w-12 border-t-2 border-gold mx-auto mb-5"></div>
+            <p class="text-sm text-gray-400 mb-10 leading-relaxed">Join the National Opioid Response Initiative. Receive updates on programs, partnership opportunities, and community resources.</p>
+
+            <form name="nori-mailing-list" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="text-left space-y-4">
+                <input type="hidden" name="form-name" value="nori-mailing-list"/>
+                <p class="hidden"><label>Don't fill this out: <input name="bot-field"/></label></p>
+
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-[10px] font-semibold tracking-[0.2em] uppercase text-gray-400 mb-2">First Name</label>
+                        <input type="text" name="first_name" required
+                               class="w-full bg-white/10 border border-white/20 text-white placeholder-gray-600 px-4 py-3 text-sm focus:outline-none focus:border-gold transition-colors"/>
+                    </div>
+                    <div>
+                        <label class="block text-[10px] font-semibold tracking-[0.2em] uppercase text-gray-400 mb-2">Last Name</label>
+                        <input type="text" name="last_name" required
+                               class="w-full bg-white/10 border border-white/20 text-white placeholder-gray-600 px-4 py-3 text-sm focus:outline-none focus:border-gold transition-colors"/>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-[10px] font-semibold tracking-[0.2em] uppercase text-gray-400 mb-2">Email Address</label>
+                    <input type="email" name="email" required
+                           class="w-full bg-white/10 border border-white/20 text-white placeholder-gray-600 px-4 py-3 text-sm focus:outline-none focus:border-gold transition-colors"/>
+                </div>
+
+                <div>
+                    <label class="block text-[10px] font-semibold tracking-[0.2em] uppercase text-gray-400 mb-2">I am a&hellip;</label>
+                    <select name="role"
+                            class="w-full bg-navy border border-white/20 text-gray-300 px-4 py-3 text-sm focus:outline-none focus:border-gold transition-colors appearance-none">
+                        <option value="">Select one</option>
+                        <option value="community_partner">Community Partner / Organization</option>
+                        <option value="healthcare_provider">Healthcare Provider</option>
+                        <option value="government">Government / Municipality</option>
+                        <option value="tribal">Tribal Community Representative</option>
+                        <option value="donor">Donor / Supporter</option>
+                        <option value="volunteer">Volunteer</option>
+                        <option value="media">Media</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <button type="submit"
+                        class="w-full bg-gold hover:bg-gold-light text-white font-bold py-3.5 text-xs tracking-[0.2em] uppercase transition-colors duration-200">
+                    Join the Initiative
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ─── FOOTER ─── -->
+    <footer class="py-10 px-6 bg-navy-dark border-t border-white/10">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-10 mb-10">
+
+                <div>
+                    <div class="font-extrabold text-white text-sm tracking-[0.2em] mb-1">NORI</div>
+                    <div class="text-[10px] text-gray-500 mb-5 tracking-widest">National Opioid Response Initiative</div>
+                    <p class="text-xs text-gray-500 leading-relaxed">A collaborative public health initiative powered by Dream BIG Inc. &amp; MediConnect. Serving New Mexico and beyond.</p>
+                </div>
+
+                <div>
+                    <div class="text-[10px] font-semibold tracking-[0.2em] uppercase text-gray-500 mb-4">Digital Ecosystem</div>
+                    <ul class="space-y-2 text-xs text-gray-600">
+                        <li>projectnori.org</li>
+                        <li>thenori.org</li>
+                        <li>norihelp.org</li>
+                        <li>norisupport.org</li>
+                        <li>norinetwork.org</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <div class="text-[10px] font-semibold tracking-[0.2em] uppercase text-gray-500 mb-4">Resources</div>
+                    <a href="/assets/docs/NORI_Capability_Statement.pdf" download
+                       class="inline-flex items-center gap-2 text-xs text-gray-500 hover:text-gold transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+                        </svg>
+                        Capability Statement (PDF)
+                    </a>
+                </div>
+
+            </div>
+            <div class="border-t border-white/10 pt-6 flex flex-wrap gap-4 justify-between text-[10px] text-gray-600">
+                <span>&copy; 2025 National Opioid Response Initiative. Powered by Dream BIG Inc. &amp; MediConnect.</span>
+                <span>projectnori.org</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
